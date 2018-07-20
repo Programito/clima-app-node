@@ -1,0 +1,12 @@
+//al no tener comandos se utiliza el options
+const argv = require('yargs').options({
+    direccion: {
+        alias: 'd',
+        desc: 'Dirección de la ciudad para obtener el clima',
+        demand: true
+    }
+}).argv;
+
+module.exports = {
+    argv
+}
